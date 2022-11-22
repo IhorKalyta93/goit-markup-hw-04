@@ -10,6 +10,7 @@
     --background-color-dark: #2F303A;
     --background-primary: color #ececec;
     --background-secondary: rgba(245, 244, 250, 1);
+    --icon-color: #afb1b8;
 }
 
 .color-lightdark {
@@ -21,7 +22,6 @@
 }
 
 .body {
-
     color: var(--primary-text-color);
     background-color: var(--background-color);
     font-family: Roboto, sans-serif;
@@ -85,7 +85,6 @@ ul {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-
 }
 
 .container {
@@ -130,8 +129,6 @@ ul {
     background-color: var(--background-secondary);
     border-radius: 4px;
 }
-
-.advantages-icon {}
 
 .about {
     padding-top: 47px;
@@ -200,7 +197,6 @@ ul {
     padding-bottom: 32px;
 }
 
-
 .link:hover,
 .link:focus,
 .link:active {
@@ -214,23 +210,31 @@ ul {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
+    align-items: center;
 }
 
 .auth-nav .item {
     color: var(--primary-text-color);
+    display: flex;
 }
-
 
 .auth-link {
     text-decoration: none;
     color: var(--primary-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
-    display: block;
+    display: flex;
+    align-items: center;
 }
 
 .auth-nav .item+.item {
     margin-left: 30px;
+}
+
+.auth-icon {
+    /* content: ""; */
+    margin-right: 10px;
+    fill: currentColor;
 }
 
 .auth-link:hover,
@@ -259,7 +263,6 @@ ul {
 .button-index:focus {
     background-color: rgba(24, 140, 232, 1);
 }
-
 
 .hero-title {
     margin-left: auto;
@@ -298,7 +301,6 @@ ul {
     border-bottom-right-radius: 5px;
 }
 
-
 .index-title0 {
     margin-bottom: 50px;
     color: var(--title-text-color);
@@ -306,7 +308,6 @@ ul {
     line-height: 1.16;
     text-align: center;
 }
-
 
 .index-title1 {
     margin-bottom: 10px;
@@ -322,8 +323,6 @@ ul {
     font-size: 14px;
 }
 
-
-
 .index-title2 {
     margin-bottom: 10px;
     color: var(--title-text-color);
@@ -336,6 +335,7 @@ ul {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .footer {
@@ -353,8 +353,6 @@ ul {
     line-height: 1.2;
     margin-bottom: 20px;
 }
-
-.address-list {}
 
 .address-list .item {
     margin-bottom: 9px;
@@ -394,14 +392,11 @@ ul {
     gap: 8px;
 }
 
-
 .text-footer60:focus,
 .text-footer60:hover,
 .text-footer60:active {
     color: var(--accent-color);
 }
-
-
 
 .button-portfolio {
     padding-left: 22px;
@@ -470,6 +465,33 @@ ul {
     gap: 30px;
 }
 
+.sn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.link-sn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--icon-color);
+    outline: transparent;
+}
+
+.sn-icon {
+    fill: currentColor;
+}
+
+.link-sn:hover,
+.link-sn:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-title-color);
+}
+
 .team .item {
     flex-basis: calc((100% - 30px * 3) / 4);
     background-color: var(--secondary-title-color);
@@ -483,4 +505,33 @@ ul {
 
 .color-test2 {
     background-color: khaki;
+}
+
+.clients-list {
+    gap: 30px;
+    display: flex;
+    width: 106px;
+    height: 60px;
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    color: var(--icon-color);
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    color: var(--accent-color);
+}
+
+.clients-icon {
+    fill: currentColor;
+    width: 106px;
+    height: 60px;
 }
