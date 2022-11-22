@@ -11,6 +11,7 @@
     --background-primary: color #ececec;
     --background-secondary: rgba(245, 244, 250, 1);
     --icon-color: #afb1b8;
+    --icon-bg: rgba(255, 255, 255, 0.1);
 }
 
 .color-lightdark {
@@ -433,6 +434,12 @@ ul {
     width: 370px;
 }
 
+.portfolio .item:hover,
+.portfolio .item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .portfolio-title {
     color: var(--title-text-color);
@@ -445,7 +452,6 @@ ul {
     padding: 24px;
     border-left: 1px solid rgba(238, 238, 238, 1);
     border-right: 1px solid rgba(238, 238, 238, 1);
-
     border-bottom: 1px solid rgba(238, 238, 238, 1);
 }
 
@@ -480,10 +486,13 @@ ul {
     border-radius: 50%;
     color: var(--icon-color);
     outline: transparent;
+    background-color: var(--icon-bg);
 }
 
 .sn-icon {
     fill: currentColor;
+
+
 }
 
 .link-sn:hover,
@@ -512,6 +521,7 @@ ul {
     display: flex;
     width: 106px;
     height: 60px;
+    align-items: center;
 }
 
 .clients-link {
@@ -534,4 +544,52 @@ ul {
     fill: currentColor;
     width: 106px;
     height: 60px;
+}
+
+.footer-contain {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-address {
+    display: inline-block;
+    width: 231px;
+}
+
+.footer-joinus {
+    display: inline-block;
+    margin-left: 70px;
+    width: 206px;
+}
+
+.joinus-title {
+    margin-bottom: 20px;
+    color: var(--secondary-title-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.joinus-list {
+    display: flex;
+}
+
+.sn-footer {
+    color: var(--secondary-title-color);
+    background-color: var(--icon-bg);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+
+.sn-footer:hover,
+.sn-footer:focus {
+    background-color: var(--accent-color);
 }
