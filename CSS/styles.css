@@ -431,10 +431,17 @@ ul {
 
 .portfolio .item {
     width: 370px;
+
 }
 
-.portfolio .item:hover,
-.portfolio .item:focus {
+.link-portfolio {
+    text-decoration: none;
+    display: block;
+    outline: transparent;
+}
+
+.link-portfolio:hover,
+.link-portfolio:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -479,9 +486,7 @@ ul {
     gap: 10px;
 }
 
-.link-portfolio {
-    text-decoration: none;
-}
+
 
 .link-sn {
     display: flex;
@@ -525,9 +530,6 @@ ul {
 .clients-list {
     gap: 30px;
     display: flex;
-    width: 106px;
-    height: 60px;
-    align-items: center;
 }
 
 .clients-link {
@@ -539,6 +541,7 @@ ul {
     color: var(--icon-color);
     border: 1px solid;
     border-radius: 4px;
+    outline: transparent;
 }
 
 .clients-link:hover,
