@@ -60,7 +60,6 @@ ul {
 }
 
 .visuality-hidden {
-    position: absolute;
     white-space: nowrap;
     width: 1px;
     height: 1px;
@@ -446,6 +445,8 @@ ul {
     font-size: 18px;
     line-height: 1.8;
     letter-spacing: 0.06em;
+
+
 }
 
 .portfolio-card {
@@ -456,6 +457,7 @@ ul {
 }
 
 .portfolio-text {
+    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
 }
@@ -475,6 +477,10 @@ ul {
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+
+.link-portfolio {
+    text-decoration: none;
 }
 
 .link-sn {
